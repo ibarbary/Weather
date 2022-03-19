@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather Journal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h3>Weather</h3>
+      <div class="holder zip">
+        <label for="zip"></label>
+        <input type="text" id="zip" placeholder="ZibCode">
+      </div>
+      <div class="holder feel">
+        <label for="feelings"></label><br>
+        <textarea
+          class="myInput"
+          id="feelings"
+          placeholder="How are you?"
+        ></textarea><br>
+        <button id="generate" type="submit">Generate</button>
+      </div>
+      <div class="holder entry">
+        <div class="title">Most Recent Entry</div>
+        <div id="entryHolder">
+          <div id="city"></div>
+          <div id="middle">
+          <div id="date"></div>
+          <div id="temp"></div>
+          </div>
+          <div id="content"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
